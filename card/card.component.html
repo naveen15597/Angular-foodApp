@@ -1,0 +1,39 @@
+
+<!-- <div class="container">
+    <div class="row">
+        <div *ngFor = "let dt of data" class="food-card col-xs-12 col-sm-6 col-sm-3 col-lg-3" >        
+                <mat-card class="card-details">
+                    <mat-card-title><img mat-card-lg-image src="{{dt.Image}}" ></mat-card-title>
+                    <mat-card-subtitle>{{dt.Type}} | {{dt.Cuisine}} | {{dt.Availability}}</mat-card-subtitle>
+                    <mat-card-content>                        
+                            <span> Price - {{dt.Price}}</span>                                                
+                    </mat-card-content>
+                    <mat-card-actions>
+                    <button class="btn btn-primary">Add to cart</button>
+                    </mat-card-actions>
+                </mat-card>   
+        </div> 
+    </div>
+</div> -->
+
+<div class="container">
+    <div class="row">
+        <div *ngFor = "let dt of data" class="food-card col-xs-12 col-sm-6 col-sm-3 col-lg-3" >   
+            <!-- <div> -->
+                <img mat-card-lg-image src="{{dt.Image}}" >
+            <!-- </div> -->
+            <div class="inner-card">
+                <div>
+                    {{dt.Type}} | {{dt.Cuisine}} | {{dt.Availability}}
+                </div>
+                <div>
+                    <span> Price - {{dt.Price}}</span>   
+                </div>
+                <div>
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
